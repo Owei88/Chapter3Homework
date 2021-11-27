@@ -1,9 +1,9 @@
 public class Student {
     private double Score;
-    private int TotalScore;
-    public int NumberOfQuizzes = 1;
-    private int AverageScore;
-    private String StudentName;
+    private int totalScore;
+    public int numberOfQuizzes = 1;
+    private int averageScore;
+    private String studentName;
 
     //public Student(){
     //}
@@ -14,14 +14,13 @@ public class Student {
      */
 
 
-    public Student(String StudentName, int FirstScore) {
+    public Student(String StudentName) {
         this.StudentName = StudentName;
-        TotalScore = FirstScore;
     }
 
     public void addScore(int Score){
-        TotalScore+= Score;
-        NumberOfQuizzes++;
+        totalScore+= Score;
+        numberOfQuizzes++;
     }
 
     public double getTotalScore() {
@@ -31,10 +30,14 @@ public class Student {
             return Score;
         }
         public String getStudentName(){
-            return StudentName;}
+            return studentName;}
 
         public double getNumberOfQuizzes(){
-            return NumberOfQuizzes;}
+            return numberOfQuizzes;}
+    
+       public double calculateQuizAverage(){
+           average score = (totalScore / numberOfQuizzes);
+           return averageScore;}
             }
 
 
