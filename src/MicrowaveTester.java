@@ -10,7 +10,7 @@ public class MicrowaveTester {
         microwave.reset();
         microwave.addThirtySeconds();
         microwave.addThirtySeconds();
-        System.out.println("Cooking for " + microwave.getMicrowaveTime()+ " seconds at level " + microwave.getPowerLevel());
+        microwave.startMicrowave();
 
     }
 
